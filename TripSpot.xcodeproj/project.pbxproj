@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA59124A1DC8B41000EB96FF /* HomeBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5912491DC8B41000EB96FF /* HomeBackground.png */; };
+		AA59124C1DC8B41E00EB96FF /* HomeLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AA59124B1DC8B41E00EB96FF /* HomeLogo.png */; };
+		AAD51D7F1DC7876300144926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD51D7E1DC7876300144926 /* AppDelegate.swift */; };
+		AAD51D811DC7876300144926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD51D801DC7876300144926 /* ViewController.swift */; };
+		AAD51D841DC7876300144926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD51D821DC7876300144926 /* Main.storyboard */; };
+		AAD51D861DC7876300144926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD51D851DC7876300144926 /* Assets.xcassets */; };
+		AAD51D891DC7876300144926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD51D871DC7876300144926 /* LaunchScreen.storyboard */; };
+		AAD51D971DC7940800144926 /* background full.png in Resources */ = {isa = PBXBuildFile; fileRef = AAD51D931DC7940800144926 /* background full.png */; };
+		AAD51D981DC7940800144926 /* locationicon.png in Resources */ = {isa = PBXBuildFile; fileRef = AAD51D941DC7940800144926 /* locationicon.png */; };
+		AAD51D991DC7940800144926 /* salfrodquays.png in Resources */ = {isa = PBXBuildFile; fileRef = AAD51D951DC7940800144926 /* salfrodquays.png */; };
+		AAD51D9A1DC7940800144926 /* stpeters.png in Resources */ = {isa = PBXBuildFile; fileRef = AAD51D961DC7940800144926 /* stpeters.png */; };
+		AAD51D9D1DC7A08F00144926 /* Rounded Rectangle 24 copy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = AAD51D9B1DC7A08F00144926 /* Rounded Rectangle 24 copy 2.png */; };
+		AAD51D9E1DC7A08F00144926 /* Rounded Rectangle 24 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AAD51D9C1DC7A08F00144926 /* Rounded Rectangle 24 copy.png */; };
+		AAD51DA31DC7BB5C00144926 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD51DA01DC7BB5C00144926 /* Montserrat-Bold.ttf */; };
+		AAD51DA41DC7BB5C00144926 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD51DA11DC7BB5C00144926 /* Montserrat-Regular.ttf */; };
+		AAD51DA51DC7BB5C00144926 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = AAD51DA21DC7BB5C00144926 /* OFL.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA5912491DC8B41000EB96FF /* HomeBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeBackground.png; sourceTree = "<group>"; };
+		AA59124B1DC8B41E00EB96FF /* HomeLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeLogo.png; sourceTree = "<group>"; };
+		AAD51D7B1DC7876300144926 /* TripSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD51D7E1DC7876300144926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAD51D801DC7876300144926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAD51D831DC7876300144926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAD51D851DC7876300144926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAD51D881DC7876300144926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAD51D8A1DC7876300144926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAD51D931DC7940800144926 /* background full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background full.png"; sourceTree = "<group>"; };
+		AAD51D941DC7940800144926 /* locationicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationicon.png; sourceTree = "<group>"; };
+		AAD51D951DC7940800144926 /* salfrodquays.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = salfrodquays.png; sourceTree = "<group>"; };
+		AAD51D961DC7940800144926 /* stpeters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stpeters.png; sourceTree = "<group>"; };
+		AAD51D9B1DC7A08F00144926 /* Rounded Rectangle 24 copy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rounded Rectangle 24 copy 2.png"; sourceTree = "<group>"; };
+		AAD51D9C1DC7A08F00144926 /* Rounded Rectangle 24 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rounded Rectangle 24 copy.png"; sourceTree = "<group>"; };
+		AAD51DA01DC7BB5C00144926 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		AAD51DA11DC7BB5C00144926 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		AAD51DA21DC7BB5C00144926 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAD51D781DC7876200144926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAD51D721DC7876200144926 = {
+			isa = PBXGroup;
+			children = (
+				AAD51D7D1DC7876300144926 /* TripSpot */,
+				AAD51D7C1DC7876300144926 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAD51D7C1DC7876300144926 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAD51D7B1DC7876300144926 /* TripSpot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAD51D7D1DC7876300144926 /* TripSpot */ = {
+			isa = PBXGroup;
+			children = (
+				AAD51D7E1DC7876300144926 /* AppDelegate.swift */,
+				AAD51D801DC7876300144926 /* ViewController.swift */,
+				AAD51D821DC7876300144926 /* Main.storyboard */,
+				AAD51D851DC7876300144926 /* Assets.xcassets */,
+				AAD51D9F1DC7BB5C00144926 /* Montserrat */,
+				AAD51D871DC7876300144926 /* LaunchScreen.storyboard */,
+				AAD51D8A1DC7876300144926 /* Info.plist */,
+				AAD51D921DC7940800144926 /* AppMedia */,
+			);
+			path = TripSpot;
+			sourceTree = "<group>";
+		};
+		AAD51D921DC7940800144926 /* AppMedia */ = {
+			isa = PBXGroup;
+			children = (
+				AA59124B1DC8B41E00EB96FF /* HomeLogo.png */,
+				AA5912491DC8B41000EB96FF /* HomeBackground.png */,
+				AAD51D9B1DC7A08F00144926 /* Rounded Rectangle 24 copy 2.png */,
+				AAD51D9C1DC7A08F00144926 /* Rounded Rectangle 24 copy.png */,
+				AAD51D931DC7940800144926 /* background full.png */,
+				AAD51D941DC7940800144926 /* locationicon.png */,
+				AAD51D951DC7940800144926 /* salfrodquays.png */,
+				AAD51D961DC7940800144926 /* stpeters.png */,
+			);
+			path = AppMedia;
+			sourceTree = "<group>";
+		};
+		AAD51D9F1DC7BB5C00144926 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				AAD51DA01DC7BB5C00144926 /* Montserrat-Bold.ttf */,
+				AAD51DA11DC7BB5C00144926 /* Montserrat-Regular.ttf */,
+				AAD51DA21DC7BB5C00144926 /* OFL.txt */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAD51D7A1DC7876200144926 /* TripSpot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD51D8D1DC7876300144926 /* Build configuration list for PBXNativeTarget "TripSpot" */;
+			buildPhases = (
+				AAD51D771DC7876200144926 /* Sources */,
+				AAD51D781DC7876200144926 /* Frameworks */,
+				AAD51D791DC7876200144926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TripSpot;
+			productName = TripSpot;
+			productReference = AAD51D7B1DC7876300144926 /* TripSpot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAD51D731DC7876200144926 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Steve Sandbach";
+				TargetAttributes = {
+					AAD51D7A1DC7876200144926 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = YUT7BRX8PN;
+						LastSwiftMigration = 0810;
+					};
+				};
+			};
+			buildConfigurationList = AAD51D761DC7876200144926 /* Build configuration list for PBXProject "TripSpot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAD51D721DC7876200144926;
+			productRefGroup = AAD51D7C1DC7876300144926 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAD51D7A1DC7876200144926 /* TripSpot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAD51D791DC7876200144926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD51DA31DC7BB5C00144926 /* Montserrat-Bold.ttf in Resources */,
+				AA59124A1DC8B41000EB96FF /* HomeBackground.png in Resources */,
+				AAD51DA41DC7BB5C00144926 /* Montserrat-Regular.ttf in Resources */,
+				AA59124C1DC8B41E00EB96FF /* HomeLogo.png in Resources */,
+				AAD51D891DC7876300144926 /* LaunchScreen.storyboard in Resources */,
+				AAD51D9A1DC7940800144926 /* stpeters.png in Resources */,
+				AAD51D991DC7940800144926 /* salfrodquays.png in Resources */,
+				AAD51D9D1DC7A08F00144926 /* Rounded Rectangle 24 copy 2.png in Resources */,
+				AAD51DA51DC7BB5C00144926 /* OFL.txt in Resources */,
+				AAD51D9E1DC7A08F00144926 /* Rounded Rectangle 24 copy.png in Resources */,
+				AAD51D971DC7940800144926 /* background full.png in Resources */,
+				AAD51D981DC7940800144926 /* locationicon.png in Resources */,
+				AAD51D861DC7876300144926 /* Assets.xcassets in Resources */,
+				AAD51D841DC7876300144926 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAD51D771DC7876200144926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD51D811DC7876300144926 /* ViewController.swift in Sources */,
+				AAD51D7F1DC7876300144926 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AAD51D821DC7876300144926 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAD51D831DC7876300144926 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAD51D871DC7876300144926 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAD51D881DC7876300144926 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAD51D8B1DC7876300144926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAD51D8C1DC7876300144926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAD51D8E1DC7876300144926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TripSpot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Indiespring.TripSpot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f3d87223-acd0-47bc-ba65-d19f7ae60416";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AAD51D8F1DC7876300144926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TripSpot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = Indiespring.TripSpot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f3d87223-acd0-47bc-ba65-d19f7ae60416";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAD51D761DC7876200144926 /* Build configuration list for PBXProject "TripSpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD51D8B1DC7876300144926 /* Debug */,
+				AAD51D8C1DC7876300144926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD51D8D1DC7876300144926 /* Build configuration list for PBXNativeTarget "TripSpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD51D8E1DC7876300144926 /* Debug */,
+				AAD51D8F1DC7876300144926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAD51D731DC7876200144926 /* Project object */;
+}
