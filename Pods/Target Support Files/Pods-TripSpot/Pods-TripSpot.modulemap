@@ -1,0 +1,6 @@
+framework module Pods_TripSpot {
+  umbrella header "Pods-TripSpot-umbrella.h"
+
+  export *
+  module * { export * }
+}
