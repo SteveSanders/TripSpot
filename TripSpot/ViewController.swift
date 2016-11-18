@@ -11,63 +11,73 @@ import FBSDKLoginKit
 
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     @IBOutlet weak var FaceBook: UIButton!
-
+    weak var signIn: UIButton!
     override func viewDidLoad() {
-                print("Test 1")
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         UIApplication.shared.statusBarStyle = .lightContent
         
+        //check to see if User is signed in...
+        if (FBSDKAccessToken.current() != nil) {
+            FaceBook.isHidden = true;
+            logIn()
+            //signIn.setTitle("Sign in as \(usersDetails.firstName) \(usersDetails.lastName)", for: .normal)
+            print("Signed in already mate!")
+            //switchMap()
+        } else {
+            signIn.isHidden = true
+            print("Mate, you're not signed in!")
+        }
+        
+        
+        
         FaceBook.addTarget(self, action: #selector(handleCustomFBLogin), for: .touchUpInside)
     }
     
+
+    
     func handleCustomFBLogin() {
-        FBSDKLoginManager().logIn(withReadPermissions: ["email", "public_profile"], from: self)
+        FBSDKLoginManager().logIn(withReadPermissions: ["email", "public_profile", "user_friends"], from: self)
         { (result, err) in
             if err != nil {
-                print ("fail")
+                print (err as Any)
                 return
             }
-            self.showEmailAddress()
+            logIn()
+            self.switchMap()
         }
+
+        
     }
     
-    
+    func changeView () {
+        let viewController = self.storyboard! .instantiateViewController(withIdentifier: "MapView") as UIViewController;
+        self.present(viewController, animated: true, completion: nil)
+    }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print ("Did log out")
     }
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
-        print("Test 2")
         if error != nil {
-            print("It did not work!")
             print (error)
             return
         }
-        showEmailAddress()
     }
-    
-    func showEmailAddress() {
-
-        FBSDKGraphRequest(graphPath: "/me", parameters: ["fields": "id, name, email"]).start { (connection, result, err) in
-            
-            if err != nil {
-                print ("something fucked up")
-                return
-            }
-            print (result)
-            let viewController = self.storyboard! .instantiateViewController(withIdentifier: "MapView") as UIViewController;
-            self.present(viewController, animated: true, completion: nil)
-        }
-        
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func switchMap() {
+        let secondViewController:UIViewController = MapViewController()
+        self.present(secondViewController, animated: true, completion: nil)
+    }
+    
+    func setLogInButton () {
+        signIn.setTitle("Sign in as \(usersDetails.firstName) \(usersDetails.lastName)", for: .normal)
+        
+    }
 }
-

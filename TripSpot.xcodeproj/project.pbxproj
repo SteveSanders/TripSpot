@@ -10,6 +10,7 @@
 		224E40E408AB8D0054C25CB5 /* Pods_TripSpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8DA5031298E3C81FE1EC52 /* Pods_TripSpot.framework */; };
 		AA59124A1DC8B41000EB96FF /* HomeBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5912491DC8B41000EB96FF /* HomeBackground.png */; };
 		AA59124C1DC8B41E00EB96FF /* HomeLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AA59124B1DC8B41E00EB96FF /* HomeLogo.png */; };
+		AAC3B6971DD5F822005311DE /* dataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC3B6961DD5F822005311DE /* dataModel.swift */; };
 		AAD51D7F1DC7876300144926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD51D7E1DC7876300144926 /* AppDelegate.swift */; };
 		AAD51D811DC7876300144926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD51D801DC7876300144926 /* ViewController.swift */; };
 		AAD51D841DC7876300144926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD51D821DC7876300144926 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		706CA1E97DABDEA008AA18D8 /* Pods-TripSpot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripSpot.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripSpot/Pods-TripSpot.release.xcconfig"; sourceTree = "<group>"; };
 		AA5912491DC8B41000EB96FF /* HomeBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeBackground.png; sourceTree = "<group>"; };
 		AA59124B1DC8B41E00EB96FF /* HomeLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeLogo.png; sourceTree = "<group>"; };
+		AAC3B6961DD5F822005311DE /* dataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataModel.swift; sourceTree = "<group>"; };
 		AAD51D7B1DC7876300144926 /* TripSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD51D7E1DC7876300144926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD51D801DC7876300144926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				AAFDE40D1DCA3A650013970E /* TripSpot.entitlements */,
+				AAC3B6961DD5F822005311DE /* dataModel.swift */,
 				AAD51D7E1DC7876300144926 /* AppDelegate.swift */,
 				AAD51D801DC7876300144926 /* ViewController.swift */,
 				AAE910A61DC9E6FF00323A6F /* MapViewController.swift */,
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD51D811DC7876300144926 /* ViewController.swift in Sources */,
+				AAC3B6971DD5F822005311DE /* dataModel.swift in Sources */,
 				AAE910A71DC9E6FF00323A6F /* MapViewController.swift in Sources */,
 				AAD51D7F1DC7876300144926 /* AppDelegate.swift in Sources */,
 			);

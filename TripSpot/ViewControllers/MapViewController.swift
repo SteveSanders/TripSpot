@@ -12,7 +12,9 @@ import CoreLocation
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
+    @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var map: MKMapView!
+    @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var overlay: UIView!
     let locationManager = CLLocationManager()
 
@@ -32,7 +34,13 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
         self.map.showsUserLocation = true
+        self.userNameLabel.text = userName
         
+        if let url = NSURL(string:userAddress) {
+            if let data = NSData(contentsOf: url as URL){
+                profileImage.image = UIImage(data: data as Data)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,7 +69,33 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     func mapViewDidFinishRenderingMap(_ mapView: MKMapView, fullyRendered: Bool) {
-        print("Got here")
         UIView.animate(withDuration: 0.3, animations: {self.overlay.alpha = 1;})
     }
+    
+    //var request = NSMutableURLRequest(url: NSURL(string: "http://tripspotstag.azurewebsites.net/swagger/ui/index#!/Venue/Venue_Get")! as URL)
+    
+//    let url = URL(string: "http://tripspotstag.azurewebsites.net/swagger/ui/index#!/Venue/Venue_Get")
+//    let request = NSMutableURLRequest(url: url)
+//    request.httpMethod = "POST"
+
+    
+    //request.HTTPMedthos = "POST"
+    //let postString = "id=13&firstName=Jack&latName=Walker&email=test@example.com&id=12345678"
+    //request.HTTPBody = postString.data
+    //let task = URLSession.shared.dataTask(with: request) { data, response, error in
+    //   guard let data = data, error == nil else {                                                 // check for fundamental networking error
+//            print("error=\(error)")
+//            return
+//        }
+//        
+//        if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
+//            print("statusCode should be 200, but is \(httpStatus.statusCode)")
+//            print("response = \(response)")
+//        }
+//        
+//        let responseString = String(data: data, encoding: .utf8)
+//        print("responseString = \(responseString)")
+//    }
+//    task.resume()
+    
 }
