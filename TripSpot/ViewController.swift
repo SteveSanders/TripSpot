@@ -29,26 +29,26 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             signIn.isHidden = true
             print("Mate, you're not signed in!")
         }
-        
-        
-        
         FaceBook.addTarget(self, action: #selector(handleCustomFBLogin), for: .touchUpInside)
     }
     
 
     
     func handleCustomFBLogin() {
+        print(usersDetails)
         FBSDKLoginManager().logIn(withReadPermissions: ["email", "public_profile", "user_friends"], from: self)
         { (result, err) in
             if err != nil {
                 print (err as Any)
                 return
+            } else {
+                print("got back to here")
+                logIn()
+                self.switchMap()
             }
-            logIn()
-            self.switchMap()
+  
         }
 
-        
     }
     
     func changeView () {
@@ -72,8 +72,8 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func switchMap() {
-        let secondViewController:UIViewController = MapViewController()
-        self.present(secondViewController, animated: true, completion: nil)
+        let viewController = self.storyboard! .instantiateViewController(withIdentifier: "MapView") as UIViewController;
+        self.present(viewController, animated: true, completion: nil)
     }
     
     func setLogInButton () {
@@ -81,3 +81,5 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         
     }
 }
+
+

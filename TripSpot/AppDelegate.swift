@@ -18,6 +18,7 @@ struct userDetails {
     var lastName: String
     var email: String
     var image: String
+    var TSID: String
     var authenticated: DarwinBoolean
 }
 
@@ -28,7 +29,7 @@ struct Friend {
     let FBID: String
 }
 
-var usersDetails = userDetails(FBID: "", firstName: "", lastName: "", email: "", image: "", authenticated: false)
+var usersDetails = userDetails(FBID: "", firstName: "", lastName: "", email: "", image: "", TSID: "", authenticated: false)
 var subscribers = [Friend]()
 
 @UIApplicationMain

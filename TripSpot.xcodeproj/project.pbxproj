@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		224E40E408AB8D0054C25CB5 /* Pods_TripSpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8DA5031298E3C81FE1EC52 /* Pods_TripSpot.framework */; };
+		AA30FA691DE5DF0E00D217E1 /* plusIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA30FA681DE5DF0E00D217E1 /* plusIcon.png */; };
+		AA4754191DE6F7B30014758A /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4754181DE6F7B30014758A /* PlacesTableViewController.swift */; };
 		AA59124A1DC8B41000EB96FF /* HomeBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5912491DC8B41000EB96FF /* HomeBackground.png */; };
 		AA59124C1DC8B41E00EB96FF /* HomeLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AA59124B1DC8B41E00EB96FF /* HomeLogo.png */; };
+		AAAA976A1DE5D2DB009BB0C9 /* locationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAA97691DE5D2DB009BB0C9 /* locationsModel.swift */; };
 		AAC3B6971DD5F822005311DE /* dataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC3B6961DD5F822005311DE /* dataModel.swift */; };
 		AAD51D7F1DC7876300144926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD51D7E1DC7876300144926 /* AppDelegate.swift */; };
 		AAD51D811DC7876300144926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD51D801DC7876300144926 /* ViewController.swift */; };
@@ -30,8 +33,11 @@
 
 /* Begin PBXFileReference section */
 		706CA1E97DABDEA008AA18D8 /* Pods-TripSpot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripSpot.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripSpot/Pods-TripSpot.release.xcconfig"; sourceTree = "<group>"; };
+		AA30FA681DE5DF0E00D217E1 /* plusIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plusIcon.png; sourceTree = "<group>"; };
+		AA4754181DE6F7B30014758A /* PlacesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesTableViewController.swift; path = ViewControllers/PlacesTableViewController.swift; sourceTree = "<group>"; };
 		AA5912491DC8B41000EB96FF /* HomeBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeBackground.png; sourceTree = "<group>"; };
 		AA59124B1DC8B41E00EB96FF /* HomeLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeLogo.png; sourceTree = "<group>"; };
+		AAAA97691DE5D2DB009BB0C9 /* locationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationsModel.swift; sourceTree = "<group>"; };
 		AAC3B6961DD5F822005311DE /* dataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataModel.swift; sourceTree = "<group>"; };
 		AAD51D7B1DC7876300144926 /* TripSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD51D7E1DC7876300144926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,9 +105,11 @@
 			children = (
 				AAFDE40D1DCA3A650013970E /* TripSpot.entitlements */,
 				AAC3B6961DD5F822005311DE /* dataModel.swift */,
+				AAAA97691DE5D2DB009BB0C9 /* locationsModel.swift */,
 				AAD51D7E1DC7876300144926 /* AppDelegate.swift */,
 				AAD51D801DC7876300144926 /* ViewController.swift */,
 				AAE910A61DC9E6FF00323A6F /* MapViewController.swift */,
+				AA4754181DE6F7B30014758A /* PlacesTableViewController.swift */,
 				AAD51D821DC7876300144926 /* Main.storyboard */,
 				AAD51D851DC7876300144926 /* Assets.xcassets */,
 				AAD51D9F1DC7BB5C00144926 /* Montserrat */,
@@ -115,6 +123,7 @@
 		AAD51D921DC7940800144926 /* AppMedia */ = {
 			isa = PBXGroup;
 			children = (
+				AA30FA681DE5DF0E00D217E1 /* plusIcon.png */,
 				AA59124B1DC8B41E00EB96FF /* HomeLogo.png */,
 				AA5912491DC8B41000EB96FF /* HomeBackground.png */,
 				AAD51D9B1DC7A08F00144926 /* Rounded Rectangle 24 copy 2.png */,
@@ -218,6 +227,7 @@
 				AA59124A1DC8B41000EB96FF /* HomeBackground.png in Resources */,
 				AAD51DA41DC7BB5C00144926 /* Montserrat-Regular.ttf in Resources */,
 				AA59124C1DC8B41E00EB96FF /* HomeLogo.png in Resources */,
+				AA30FA691DE5DF0E00D217E1 /* plusIcon.png in Resources */,
 				AAD51D891DC7876300144926 /* LaunchScreen.storyboard in Resources */,
 				AAD51D9A1DC7940800144926 /* stpeters.png in Resources */,
 				AAD51D991DC7940800144926 /* salfrodquays.png in Resources */,
@@ -286,10 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAA976A1DE5D2DB009BB0C9 /* locationsModel.swift in Sources */,
 				AAD51D811DC7876300144926 /* ViewController.swift in Sources */,
 				AAC3B6971DD5F822005311DE /* dataModel.swift in Sources */,
 				AAE910A71DC9E6FF00323A6F /* MapViewController.swift in Sources */,
 				AAD51D7F1DC7876300144926 /* AppDelegate.swift in Sources */,
+				AA4754191DE6F7B30014758A /* PlacesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

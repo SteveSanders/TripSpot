@@ -13,16 +13,17 @@ var logInRecieved = false
 var friendsRecieved = false
 
 func logIn() {
+    print("Log in called")
     FBLogIn();
-    getFriends();
+    //getFriends();
     //postDetails();
     
 }
 
 func FBLogIn() {
-    
+    print("about to send request")
     FBSDKGraphRequest(graphPath: "/me", parameters: ["fields": "name, first_name, last_name, email, picture"]).start { (connection, result, err) -> Void in
-        
+        print("Request sent")
         if err != nil {
             print (err)
             return
@@ -38,13 +39,15 @@ func FBLogIn() {
         usersDetails.authenticated = true
         usersDetails.FBID = (resultP?["id"] as? String)!
         logInRecieved = true
-        postDetails()
+        print("Log in details recieved")
+        getFriends()
+        //postDetails()
         //setLogInButton()
     }
 }
 
 func getFriends () {
-    print("printing friends...")
+    //print("printing friends...")
     let parameters = ["fields": "name, uid, first_name, last_name, picture"]
     FBSDKGraphRequest(graphPath: "me/friends", parameters: parameters).start { (connection, user, requestError) in
         if requestError != nil {
@@ -64,7 +67,7 @@ func getFriends () {
             let friend = Friend(firstName: firstName!, lastName: lastName!, image: userAddress, FBID: id!)
             subscribers.append(friend)
         }
-        print(subscribers)
+        print("friends recieved")
         friendsRecieved = true
         postDetails()
     }
@@ -85,22 +88,20 @@ func postDetails() {
             friend["lastName"] = subscriber.lastName as AnyObject
             friend["FacebookId"] = subscriber.FBID as AnyObject
             friend["ProfilePictureUrl"] = subscriber.image as AnyObject
-            //Delete dummy data below once API is fixed
-            friend["Email"] = "test@example.co.uk" as AnyObject
             
             jsonFriends.append(friend as AnyObject)
-            print(jsonFriends)
+//            print(jsonFriends)
             }
             
         
             
         }
 
-        print(jsonFriends)
+        print("Json freinds are -> ", jsonFriends)
         var jsonReady: [String : AnyObject] {
             return [
                 // add back in when subscribers have been JSONified
-                "subscribers" : jsonFriends as AnyObject,
+                "Subscriptions" : jsonFriends as AnyObject,
                 "FacebookId" : usersDetails.FBID as AnyObject,
                 "FirstName": usersDetails.firstName as AnyObject,
                 "LastName": usersDetails.lastName as AnyObject,
@@ -126,19 +127,29 @@ func postDetails() {
                     return
                 }
                 do {
-                    print("Got here", data)
+//                    print("Got here", data)
                     let result = try JSONSerialization.jsonObject(with: data!, options: []) as? [String:AnyObject]
-                    
+                    let resultP = result as! NSDictionary
+                    usersDetails.TSID = (resultP["id"] as? String)!
                     print("Result -> \(result)")
+                    print("Users Details -> ", usersDetails)
+                    print("Subscribers -> ", subscribers)
                     
                 } catch {
                     print("Error -> \(error)")
                 }
             }
-            
+            usersDetails.authenticated = true
             task.resume()
         } catch {
             print("JSON error: \(error.localizedDescription)")
 
         }
     }
+
+//var vc = viewController()
+//func application(application: UIApplication, didFinishLaunchingWithOptions: [NSObject: AnyObject]? -> Bool,
+//    {
+//    vc.firstName = 'test'
+//    
+//    })
