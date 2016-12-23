@@ -9,29 +9,6 @@
 import UIKit
 import FBSDKCoreKit
 
-var userName: String! = "Test"
-var userAddress: String! = "fail"
-
-struct userDetails {
-    var FBID: String
-    var firstName: String
-    var lastName: String
-    var email: String
-    var image: String
-    var TSID: String
-    var authenticated: DarwinBoolean
-}
-
-struct Friend {
-    let firstName: String
-    let lastName: String
-    let image: String
-    let FBID: String
-}
-
-var usersDetails = userDetails(FBID: "", firstName: "", lastName: "", email: "", image: "", TSID: "", authenticated: false)
-var subscribers = [Friend]()
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

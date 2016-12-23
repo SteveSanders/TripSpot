@@ -13,13 +13,15 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     @IBOutlet weak var FaceBook: UIButton!
     weak var signIn: UIButton!
     override func viewDidLoad() {
-        
+        addLocations()
         super.viewDidLoad()
+        zoomed = false
         // Do any additional setup after loading the view, typically from a nib.
         UIApplication.shared.statusBarStyle = .lightContent
         
         //check to see if User is signed in...
         if (FBSDKAccessToken.current() != nil) {
+            print(FBSDKAccessToken.current())
             FaceBook.isHidden = true;
             logIn()
             //signIn.setTitle("Sign in as \(usersDetails.firstName) \(usersDetails.lastName)", for: .normal)
@@ -39,6 +41,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         FBSDKLoginManager().logIn(withReadPermissions: ["email", "public_profile", "user_friends"], from: self)
         { (result, err) in
             if err != nil {
+                print("Logging in messed up!")
                 print (err as Any)
                 return
             } else {
@@ -46,9 +49,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
                 logIn()
                 self.switchMap()
             }
-  
         }
-
     }
     
     func changeView () {
@@ -77,7 +78,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func setLogInButton () {
-        signIn.setTitle("Sign in as \(usersDetails.firstName) \(usersDetails.lastName)", for: .normal)
+        signIn.setTitle("Sign in as \(usersDetails?.firstName) \(usersDetails?.lastName)", for: .normal)
         
     }
 }
